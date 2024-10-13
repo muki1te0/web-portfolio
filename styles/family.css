@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.family-cards{
+    margin-top: 70px;
+    display: flex;
+    gap: 50px;
+    column-count: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.family-card{
+    width: 300px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    box-shadow: 0px 8px 12px 0px #00000040;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.family-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; 
+}
+
+.family-card:hover{
+    transition: 0.5s ease-in-out;
+    transform: translateY(-50px);
+    scale: 1.1;
+}
+
+@media (width < 430px){
+    .family-card{
+        width: 250px;
+    }
+}

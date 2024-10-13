@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hobbies-info .wrapper{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 200px;
+}
+
+.education-content{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.family-content{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+@media (width < 1700px){
+    .education-title{
+        text-align: center;
+    }
+    .education-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .education-content .family-image{
+        flex: 0;
+    }
+}

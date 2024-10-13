@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Contact Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <a href="index.html"><h2>Mukanov</h2></a>
+                </div>
+                <div class="nav-right">
+                    <a href="family.html">FAMILY</a>
+                    <a href="education.html">EDUCATION</a>
+                    <a href="hobbies.html">HOBBIES</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="wrapper">
+            <div class="contact-content">
+                <h1>Contact me</h1>
+                <p>Want to get in touch? Send me a message!</p>
+                <span class="icon-logos">
+                    <a href="https://t.me/muki1te0" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/tuts/256/telegram.png" alt="Telegram"></a>
+                    <a href="https://www.instagram.com/muki1te0/" target="_blank"><img src="assets/inst.png" alt="Instagram"></a>
+                    <a href="https://github.com/muki1te0" target="_blank"><img src="assets/git.png" alt="GitHub"></a>
+                </span>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Name" id="name" name="name" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" placeholder="Email Address" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g., +1234567890" pattern="[\+0-9]{1,15}" inputmode="numeric" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
