@@ -15,6 +15,12 @@
     margin-bottom: 100px;
 }
 
+iframe { 
+    width: 500px;
+    height: 400px;
+    border: 0;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -65,4 +71,12 @@ form button {
 
 form button:hover {
     background-color: #7d3b73;
+}
+
+@media (width < 700px) {
+    iframe{
+        max-width: 250px;
+        height: auto;
+        flex-shrink: 1;
+    }
 }
