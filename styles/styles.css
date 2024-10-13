@@ -370,6 +370,7 @@ body h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 75px;
     gap: 30px;
     flex-wrap: wrap;
